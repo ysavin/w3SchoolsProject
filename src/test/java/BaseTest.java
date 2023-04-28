@@ -18,7 +18,7 @@ public class BaseTest {
     public static void setUpClass() throws MalformedURLException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.setCapability("browserVersion", "1051");
+        options.setCapability("browserVersion", "106");
         options.setCapability("selenoid:options", new HashMap<String, Object>() {{
             put("name", "Test container");
             put("sessionTimeout", "15m");
